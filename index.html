@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarnX | Complete Tasks, Earn Rewards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Earn<span>X</span></div>
+        <div class="wallet-btn" id="withdrawBtn">
+            <i class="fas fa-wallet"></i> 
+            <span id="userBalance">₹0</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero-banner">
+            <h1>Complete Simple Tasks</h1>
+            <p>Earn real UPI Cash or Free Fire Diamonds instantly.</p>
+        </header>
+
+        <h2 class="section-title">Available Tasks 🚀</h2>
+        
+        <div class="task-grid">
+            <div class="task-card">
+                <div class="task-icon"><i class="fab fa-youtube" style="color: #ff0000;"></i></div>
+                <div class="task-details">
+                    <h3>Subscribe Channel</h3>
+                    <p>Subscribe and turn on bell icon.</p>
+                </div>
+                <div class="task-action">
+                    <span class="reward-tag">+ ₹5</span>
+                    <button class="do-task-btn" onclick="startTask(this, 5)">Start</button>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-icon"><i class="fab fa-google-play" style="color: #00ff88;"></i></div>
+                <div class="task-details">
+                    <h3>Install Win App</h3>
+                    <p>Download, install and register.</p>
+                </div>
+                <div class="task-action">
+                    <span class="reward-tag">+ ₹15</span>
+                    <button class="do-task-btn" onclick="startTask(this, 15)">Start</button>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-icon"><i class="fab fa-instagram" style="color: #e1306c;"></i></div>
+                <div class="task-details">
+                    <h3>Follow on Insta</h3>
+                    <p>Follow our sponsor page.</p>
+                </div>
+                <div class="task-action">
+                    <span class="reward-tag">+ ₹3</span>
+                    <button class="do-task-btn" onclick="startTask(this, 3)">Start</button>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-icon"><i class="fas fa-gamepad" style="color: #ffaa00;"></i></div>
+                <div class="task-details">
+                    <h3>Play a Mini Game</h3>
+                    <p>Play for 3 minutes to unlock reward.</p>
+                </div>
+                <div class="task-action">
+                    <span class="reward-tag">+ ₹10</span>
+                    <button class="do-task-btn" onclick="startTask(this, 10)">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

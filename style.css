@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117; /* Dark Pro Background */
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1000px; /* PC par center mein rakhega */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #161b22;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo span { color: #00ff88; }
+
+.wallet-btn {
+    background: linear-gradient(45deg, #ffaa00, #ff8800);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 170, 0, 0.3);
+    transition: 0.3s;
+}
+
+.wallet-btn:hover { transform: scale(1.05); }
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #161b22, #0d1117);
+    border: 1px solid #30363d;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.hero-banner h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Phone pe chota, PC pe bada */
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+.hero-banner p { color: #8b949e; }
+
+/* Tasks Grid */
+.section-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #c9d1d9;
+}
+
+.task-grid {
+    display: grid;
+    /* MAGIC TRICK: Ye PC par 2 cards ek line mein aur phone par 1 card set karega automatically */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+/* Task Card */
+.task-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.task-card:hover { border-color: #00ff88; }
+
+.task-icon {
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+}
+
+.task-details {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.task-details h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.task-details p {
+    font-size: 0.8rem;
+    color: #8b949e;
+}
+
+.task-action {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reward-tag {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #00ff88;
+}
+
+.do-task-btn {
+    background-color: #238636;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    min-width: 80px; /* Button kabhi chipkega nahi */
+}
+
+.do-task-btn:hover { background-color: #2ea043; }
+.do-task-btn:disabled { background-color: #30363d; color: #8b949e; cursor: not-allowed; }
